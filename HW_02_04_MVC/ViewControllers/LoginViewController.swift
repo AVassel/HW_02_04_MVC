@@ -19,8 +19,6 @@ class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        prepareToLoad()
-        
         guard let tapBarController = segue.destination as? UITabBarController else { return }
         guard let viewControllers = tapBarController.viewControllers else { return }
         
@@ -43,6 +41,10 @@ class LoginViewController: UIViewController {
     
     @IBAction func forgotPassButtonPressed() {
         showAlert(with: "Забыли пароль?", and: "А он - \(user.userPassword)")
+    }
+    
+    @IBAction func LoginButtonPressed() {
+        prepareToLoad()
     }
     
     @IBAction func forgotUserButtonPressed() {

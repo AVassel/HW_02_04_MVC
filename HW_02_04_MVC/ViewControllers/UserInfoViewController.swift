@@ -13,7 +13,7 @@ class UserInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "\(user.person.firstName) \(user.person.surname)"
+        title = "\(user.person.fullName)"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

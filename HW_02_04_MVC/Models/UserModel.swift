@@ -24,6 +24,10 @@ struct Person {
     let surname: String
     let image: String
     
+    var fullName: String {
+        "\(firstName) \(surname)"
+    }
+    
     static func getPerson() -> Person {
         Person(firstName: "Anton", surname: "Vassel", image: "StarSKA")
     }

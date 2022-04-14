@@ -44,6 +44,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="LoginButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="JkJ-HP-MNN"/>
                                     <segue destination="Hx0-Ry-VTz" kind="presentation" identifier="WelcomeViewController" modalPresentationStyle="fullScreen" id="tkK-PQ-o3c"/>
                                 </connections>
                             </button>
@@ -216,6 +217,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Hx0-Ry-VTz" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WjR-WV-PMf">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
